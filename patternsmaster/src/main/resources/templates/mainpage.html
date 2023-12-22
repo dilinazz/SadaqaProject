@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sadaqa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <menu>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                </div>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#programs">Наши программы</a></li>
+                    <li><a href="#">фонды</a></li>
+                    <li><a href="categories.html">Категории</a></li>
+                </ul>
+                <div class="buttons">
+                    <a class="voiti" th:href="@{/sign-up}">Войти</a>
+                    <a class="help" href="categories.html">Хочу помочь</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+
+    <header>
+        <div class="container">
+            <div class="mainpage">
+                <h1>
+                    Все начинается с <br> доброго намерения
+                </h1>
+                <p>
+                    Соединяем тех, кто может помочь, с теми, кому нужна помощь.
+                </p>
+                <a href="categories.html">Хочу помочь</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h1>О нас</h1>
+            <div class="txt1">
+                <p>Sadaqa - это благотворительная <br> платформа, объединяющая все достоверные <br> фонды Казахстана в одном месте. Наша <br> миссия заключается в том, чтобы сделать <br> процесс благотворительности легким и <br> удобным для всех желающих помочь.</p>
+                <a href="aboutus.html">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="programs" id="programs">
+        <div class="container">
+            <h1>Наши программы</h1>
+            <p>У нашего благотворительного фонда есть несколько программ, <br> которые помогают всем получить необходимую помощь и <br> поддержку.</p>
+
+            <div class="program1">
+                <div class="photo">
+                </div>
+                <div class="txtpro">
+                    <div class="row">
+                        <p>Мы оказываем<br>помощь детям</p>
+                        <img src="img/insta.png" alt="insta">
+                    </div>
+                    <a href="kids_help.html" class="programme">О программе</a>
+                    <a href="categories.html" class="helpp">Хочу помочь</a>
+                </div>
+            </div>
+
+            <div class="program2">
+                <div class="txtpro">
+                    <div class="row">
+                        <p> Заботимся о<br>пожилых людях</p>
+                        <img src="img/twitter.png" alt="insta">
+                    </div>
+                    <a href="#" class="programme">О программе</a>
+                    <a href="categories.html" class="helpp">Хочу помочь</a>
+                </div>
+                <div class="photo"></div>
+            </div>
+
+
+            <div class="program3">
+                <div class="photo"></div>
+                <div class="txtpro">
+                    <div class="row">
+                        <p>Помогаем людям с ограниченными <br> возможностями </p>
+                        <img src="img/pinterest.png" alt="insta">
+                    </div>
+                    <a href="#" class="programme">О программе</a>
+                    <a href="categories.html" class="helpp">Хочу помочь</a>
+                </div>
+            </div>
+
+
+            <div class="program4">
+                <div class="txtpro">
+                    <div class="row">
+                        <p>помогаем животным найти 
+                            новый дом</p>
+                        <img src="img/facebook.png" alt="insta">
+                    </div>
+                    <a href="#" class="programme">О программе</a>
+                    <a href="categories.html" class="helpp">Хочу помочь</a>
+                </div>
+                <div class="photo"></div>
+            </div>
+         </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <h1>Новости</h1>
+            <div class="carousel">
+                <a href="#" class="button-link">
+                    <img src="img/icon.png" alt="previous">
+                </a>
+                <div class="car1">
+                    <img src="img/car1.png" alt="car1">
+                    <p>Мы собрали значительную <br> сумму, которую мы <br> направили на помощь <br> нуждающимся.</p>
+                </div>
+                <div class="car1">
+                    <img src="img/car2.png" alt="car2">
+                    <p>Мы продолжили нашу работу с  пожилыми людьми, которые нуждаются в нашей помощи.</p>
+                </div>
+                <div class="car1">
+                    <img src="img/car3.png" alt="car3">
+                    <p>Мы расширили нашу работу с животными и помогли брошенным и бездомным животным найти новые дома</p>
+                </div>
+                <div class="car1">
+                    <img src="img/car4.png" alt="car4">
+                    <p>Мы продолжаем работать упорно, чтобы помогать тем, кто нуждается в нашей помощи.</p>
+                </div>
+
+                <a href="#" class="button-link1">
+                    <img src="img/icon2.png" alt="previous">
+                </a>
+
+                <div class="car1">
+                    <img src="img/car5.png" alt="car5">
+                    <p>Мыначали работу с  пожилыми людьми, которые нуждаются в нашей помощи.</p>
+                </div>
+                <div class="car1">
+                    <img src="img/car6.png" alt="car6">
+                    <p>Мы помогли брошенным и бездомным животным найти новые дома</p>
+                </div>
+                <div class="car1">
+                    <img src="img/car7.png" alt="car7">
+                    <p>Мы помогли передвигаться детям с ограниченными возможностями</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="container">
+            <div class="content">
+                <div class="leftside">
+                    <div class="logos">
+                        <img class="twit" src="img/twitter.png" alt="">
+                        <img src="img/insta.png" alt="">
+                        <img src="img/facebook.png" alt="">
+                        <img class="twit" src="img/pinterest.png" alt="">
+                    </div>
+                    <p>Мы полагаемся на добровольные пожертвования, чтобы помочь тем, кто нуждается в нашей помощи.
+                     </p>
+
+
+                    <div class="btn_row">
+                        <a href="#" class="tg" style="margin-left: 105px;">100тг</a>
+                        <a href="#" class="tg">500тг</a>
+                        <a href="#" class="tg">1000тг</a>
+                    </div>
+                    <a href="#" class="help_v">Хочу помочь</a>
+
+                    <p class="regular"> Мы будем благодарны за любую поддержку</p>
+                </div>
+                <a href="https://youtu.be/ZBtXe9ucw3M">
+                    <img src="img/video.png" alt="Image">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="left">
+                <img src="img/logo1.png" alt="">
+                 <p>“Sadaqa” является организацией, которая посвящает свою деятельность помощи нуждающимся людям, животным по всему Казахстану.</p>
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

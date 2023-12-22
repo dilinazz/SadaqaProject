@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/вход.png" style="top: 100px;" class="register">
+        <div class="login">
+            <h1>Вход</h1>
+            <form th:action="@{/login}" method="post">
+                <label for="surname">Почта:</label>
+                <input type="text" id="surname" placeholder="Введите email" name="email">
+                
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" class="password" placeholder="Введите пароль" name="password">
+
+                <span class="pass-icon" id="pass-icon"><img src="img/Vector.png" style="height: 16px; width: 24px;"></span>
+                <a href="profile.html" id="login"> Войти</a>
+                <!-- <input type="submit" value="Войти"> -->
+
+                <a th:href="@{/resetpassword}">Забыли пароль?</a>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        const inputPass = document.
+        getElementById('forn-pass');
+        const iconPass = document.
+        getElementById('pass-icon');
+
+        iconPass.addEventListener('click', () => {
+            if (inputPass.getAttribute('type')
+                === "password") {
+                inputPass.setAttribute('type', 'text');
+
+            } else {
+                inputPass.setAttribute('type', 'password');
+            }
+        });
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+    
+</body>
+</html>

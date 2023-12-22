@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Montserrat Alternates', sans-serif;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto; /* This centers the page horizontally */
+    height: 1080px;
+    background-color: #FFF8ED;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Media query for tablet screens */
+@media (max-width: 1024px) {
+    body {
+    width: 100%;
+    }
+}
+
+/* Media query for smartphone screens */
+@media (max-width: 480px) {
+    body {
+    width: 100%;
+    }
+} 
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+}
+
+menu{
+    width: 100%;
+    background-color: white;
+    height: 98px;
+    font-weight: 500;
+}
+
+nav ul{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding-left: 100px;
+}
+
+menu nav ul li a{
+    margin-top: 25px;
+    margin-right: 42px;
+    color: black;
+    font-size: 20px;
+    display: block;
+}
+
+menu nav ul li a:hover{
+    color: #ED7C48;
+    border-bottom: 2px solid #ED7C48;
+}
+
+nav .logo{
+    padding-top: 18px;
+    height: 60px;
+    width: 167px;
+}
+
+nav .logo:hover{
+    transform: scale(1.1);
+}
+
+menu nav .buttons{
+    margin-top: 28px;
+}
+
+
+menu nav .buttons a{
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #F2A17A;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+menu nav .buttons .voiti{
+    padding-top: 10px;
+    color: #F2A17A;
+    background-color: transparent;
+    font-weight: 200;
+    width: 120px;
+    margin-left: 40px;
+    height: 45px;
+}
+
+menu nav .buttons .help{
+    padding-top: 10px;
+    background-color: #F2A17A;
+    color: #fff;
+    margin-left: 20px;
+    width: 120px;
+    height: 45px;
+}
+
+.txt{
+    height: 822px;
+}
+
+.txt{
+    display: flex;
+}
+
+.txt .container{
+    margin-top: 60px;
+}
+
+.textt h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.textt p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.textt img{
+    height: 0;
+    width: 862px;
+}
+
+.txt img{
+    width: 280px;
+    height: 238px;
+}
+
+.txt .mal{
+    margin-top: 600px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+footer a{
+    color: #666666;
+    font-size: 16px;
+}
+
+footer ul li a{
+    color: black;
+    font-size: 20px;
+    display: block;
+    font-size: 16px;
+    margin-right: 34px;
+}
+
+footer ul li a:hover{
+    color: #F2A17A;
+}
+
+footer ul{
+    display: flex; 
+    justify-content: center;
+    align-items: end;
+    margin-left: 760px;
+}

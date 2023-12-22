@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <menu>
+        <nav>
+            <div class="logo">
+                <a href="mainpage.html"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="mainpage.html">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#programs">Наши программы</a></li>
+                <li><a href="#">фонды</a></li>
+                <li><a href="categories.html">Категории</a></li>
+            </ul>
+            <div class="buttons">
+                <img src="img/user.png" alt="">
+                <p id="name_surname">Atibek Togzhan</p>
+            </div>
+        </nav>
+    </menu>
+
+
+    <div class="center">
+        <div class="content">
+            <h1>Помочь</h1>
+            <div class="pll">
+                <p style="margin-left: 38px"> <b>Платежные данные</b></p>
+            <!-- <form>
+                <label for="cardNumber">Номер карты:</label>
+                <input type="number" id="cardNumber" placeholder="0000 0000 0000 0000">
+              
+                <label for="expiryDate">Дата окончания действия:</label>
+                <input type="number" id="expiryDate" placeholder="mm/yy">
+              
+                <label for="ssv">Код безопасности:</label>
+                <input type="password" id="ssv" placeholder="SSV">
+              
+                <label for="amount">Сумма:</label>
+                <input type="number" id="amount" placeholder="Enter amount"></form>
+                <a href="#" id="send"> <b>Отправить</b></a> -->
+                <form th:action="@{'/send-money/' + ${charity.id}}" method="post">
+                    <div class="modal fade" id="sendMoneyModal" tabindex="-1" role="dialog" aria-labelledby="sendMoneyModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="sendMoneyModalLabel">Send Money</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                    
+                                        <div class="form-group">
+                                            <label for="amount">Amount:</label>
+                                            <input type="number" class="form-control" id="amount" name="amount" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="color: #666666;">@ 2023 Sadaka</p>
+            <p style="margin-left: 700px;">Главная</p>
+            <p>О нас</p>
+            <p>Фонды</p>
+            <p style="color: #F2A17A;">Категории</p>
+    </footer>
+</body>
+</html>

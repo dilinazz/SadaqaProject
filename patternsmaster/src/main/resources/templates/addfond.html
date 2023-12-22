@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addfond</title>
+    <link rel="stylesheet" href="css/addfond.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <menu>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#programs">Наши программы</a></li>
+                <li><a href="#">фонды</a></li>
+                <li><a href="categories.html">Категории</a></li>
+            </ul>
+            <div class="buttons">
+                <img src="img/user.png" alt="">
+                <p id="name_surname">Atibek Togzhan</p>
+            </div>
+        </nav>
+    </menu>
+
+    <div class="center">
+        <div class="content">
+            <div class="side1">
+                <img src="img/addfond.png" alt="">
+                <a href="#"><img src="img/photo.png" alt="">Загрузить фото</a>
+                
+            </div>
+            <div class="side2">
+                <!-- <div class="info">
+                    <div class="info-item">
+                        <label for="description">Описание:</label>
+                        <input type="text" id="description" value="">
+                    </div>
+                    <div class="info-item">
+                        <label for="goal">Цель:</label>
+                        <input type="text" id="goal" value="">
+                    </div>
+                    <div class="info-item">
+                        <label for="bin">Счет(BIN):</label>
+                        <input type="email" id="bin" value="">
+                    </div>
+                    <div class="info-item">
+                        <label for="city">Город:</label>
+                        <input type="text" id="city" value="">
+                    </div>
+                </div> -->
+                <form th:action="@{/apply-to-charity}" method="post">
+                    <label for="charityName">Charity Name:</label>
+                    <input type="text" id="charityName" name="charityName" required>
+                
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="category" required>
+                
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                
+                    <label for="shortDescription">Short Description:</label>
+                    <textarea id="shortDescription" name="shortDescription" required></textarea>
+                
+                    <label for="fullDescription">Full Description:</label>
+                    <textarea id="fullDescription" name="fullDescription" required></textarea>
+                
+                    <label for="goal">Goal:</label>
+                    <input type="number" id="goal" name="goal" required>
+                
+                    <button type="submit">Apply</button>
+                </form>
+            </div>
+            <div class="side3">
+                <a href="congrats.html">Отправить</a>
+                <a href="profile.html" id="cancel">Отмена</a>
+            </div>
+        </div>
+    </div>
+
+    <div th:if="${user.role == 'ROLE_USER'}">
+        <h2>Applied Charities</h2>
+        <ul>
+            <li th:each="charity : ${appliedCharities}">
+                <p>Charity Name: <span th:text="${charity.charityName}"></span></p>
+                <p>Category: <span th:text="${charity.category}"></span></p>
+                <p>City: <span th:text="${charity.city}"></span></p>
+                <p>Status: <span th:if="${charity.isHandled()}">applied</span><span th:if="${!charity.isHandled()}">wait</span></p>
+                <hr/>
+            </li>
+        </ul>
+    </div>
+    
+    <div th:if="${user.role == 'ROLE_ADMIN'}">
+        <h2>Handle Charities</h2>
+        <ul th:each="charity : ${charities}">
+            <li th:if="${!charity.isHandled}">
+                <a th:href="@{'/details/' + ${charity.id}}"><p>Charity Name: <span th:text="${charity.charityName}"></span></p></a>
+                <p>Category: <span th:text="${charity.category}"></span></p>
+                <hr/>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p style="color: #666666;">@ 2023 Sadaka</p>
+            <p style="margin-left: 700px;">Главная</p>
+            <p>О нас</p>
+            <p>Фонды</p>
+            <p style="color: #F2A17A;">Категории</p>
+    </footer>
+
+</body>
+</html>

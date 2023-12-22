@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat+Alternates:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.webarchive">
+    <link rel="stylesheet" href="css/main.css">
+   
+</head>
+<body>
+    <div class="container">
+        <img src="img/регистрация.png" class="register">
+        <div class="login">
+            <h1>Регистрация</h1>
+            <form th:action="@{/sign-up}" method="post">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" placeholder="Введите вашу фамилию" name="surname">
+
+                <label for="name">Имя:</label>
+                <input type="text" id="name" placeholder="Введите ваше имя" name="name">
+
+                <label for="email">Почта:</label>
+                <input type="text" id="email" placeholder="Введите вашу почту" name="email">
+                
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" class="password" placeholder="Введите пароль" name="password">
+                <!-- <span class="pass-icon" id="pass-icon"><img src="img/Vector.png" style="height: 16px; width: 24px;"></span> -->
+                <span class="pass-icon" id="pass-icon"><img src="img/Vector.png" style="height: 16px; width: 24px;"></span>
+                
+                <a th:href="@{/login}" id="btn">Регистрация</a>
+
+                <a id="btnn" th:href="@{/login}"> Увас уже есть аккаунт?</a>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        const inputPass = document.
+        getElementById('forn-pass');
+        const iconPass = document.
+        getElementById('pass-icon');
+
+        iconPass.addEventListener('click', () => {
+            if (inputPass.getAttribute('type')
+                === "password") {
+                inputPass.setAttribute('type', 'text');
+
+            } else {
+                inputPass.setAttribute('type', 'password');
+            }
+        });
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

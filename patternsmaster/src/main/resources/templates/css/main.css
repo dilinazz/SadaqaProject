@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Montserrat Alternates', sans-serif;
+    background-color: #FFF8ED;
+}
+
+body {
+    width: 1370px;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+}
+
+.register{
+    margin-right: 150px;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+.login{
+    margin-top: 140px;
+}
+
+.login h1{
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; 
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 1px solid #808080;
+    color: #808080;
+  }
+  
+  /* input[type="submit"] {
+    background-color: #8773F3;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  } */
+  form #btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #6D64AE;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    width: 320px;
+    height: 38px;
+  }
+
+form #btn:hover {
+  text-decoration: none; 
+  background-color: #8773F3;
+}
+
+  
+form #btnn{
+  margin-top: 15px;
+    display: block;
+    text-align: center;
+    color: #808080;
+    font-size: 13px;
+  }
+  
+form #btnn:hover {
+    color: #8773F3;
+  }
+  

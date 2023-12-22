@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/apply-to-charity}" method="post">
+    <label for="charityName">Charity Name:</label>
+    <input type="text" id="charityName" name="charityName" required>
+
+    <label for="category">Category:</label>
+    <input type="text" id="category" name="category" required>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="shortDescription">Short Description:</label>
+    <textarea id="shortDescription" name="shortDescription" required></textarea>
+
+    <label for="fullDescription">Full Description:</label>
+    <textarea id="fullDescription" name="fullDescription" required></textarea>
+
+    <label for="goal">Goal:</label>
+    <input type="number" id="goal" name="goal" required>
+
+    <button type="submit">Apply</button>
+</form>
+
+
+</body>
+</html>

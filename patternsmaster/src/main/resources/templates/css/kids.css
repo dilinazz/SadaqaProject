@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Montserrat Alternates', sans-serif;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    height: 3440px;
+    background-color: #FFF8ED;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (max-width: 1024px) {
+    body {
+    width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+    width: 100%;
+    }
+} 
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+}
+
+menu{
+    width: 100%;
+    background-color: white;
+    height: 98px;
+    font-weight: 500;
+}
+
+nav ul{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding-left: 100px;
+}
+
+menu nav ul li a{
+    margin-top: 25px;
+    margin-right: 42px;
+    color: black;
+    font-size: 20px;
+    display: block;
+}
+
+menu nav ul li a:hover{
+    color: #ED7C48;
+    border-bottom: 2px solid #ED7C48;
+}
+
+nav .logo{
+    padding-top: 18px;
+    height: 60px;
+    width: 167px;
+}
+
+nav .logo:hover{
+    transform: scale(1.1);
+}
+
+menu nav .buttons{
+    margin-top: 28px;
+}
+
+
+menu nav .buttons a{
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #F2A17A;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+menu nav .buttons .voiti{
+    padding-top: 10px;
+    color: #F2A17A;
+    background-color: transparent;
+    font-weight: 200;
+    width: 120px;
+    margin-left: 40px;
+    height: 45px;
+}
+
+menu nav .buttons .help{
+    padding-top: 10px;
+    background-color: #F2A17A;
+    color: #fff;
+    margin-left: 20px;
+    width: 120px;
+    height: 45px;
+}
+
+.programs .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.programs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.programs h1{
+    color: #000;
+    font-size: 48px;
+    font-style: bold;
+}
+
+.programs .txt p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #807C77;
+    width: 640px;
+    text-align: center;
+    margin-left: 340px;
+}
+
+.program1{
+    display: flex;
+}
+
+.programs .program1 .photo{
+    margin-top: 80px;
+    background-image: url(../img/program1.png);
+    width: 618px;
+    height: 414px;
+    margin-left: 220px;
+}
+
+
+.programs .program1 .txtpro{
+    width: 390px;
+    height: 180px;
+    margin-top: 200px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: -40px;
+    
+}
+
+.programs .program1 .txtpro p{
+    font-weight: 600;
+    margin-left: 40px;
+    font-size: 14px;
+    margin-top: 35px;
+    color: #807C77;
+}
+
+.programs .program1 .txtpro .helpp{
+    margin-top: 30px;
+    padding-top: 10px;
+    background-color: #F2A17A;
+    color: #fff;
+    margin-left: 20px;
+    width: 140px;
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #F2A17A;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    height: 45px;
+}
+
+.whose .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+}
+
+.whose .helping{
+    display: flex;
+    margin-top: 60px;
+    width: 180px;
+    height: 316px;
+    margin-left: 180px;
+}
+
+.whose .txt{
+    text-align: center;
+}
+
+.txt h1{
+    color: #000;
+    font-size: 48px;
+    font-style: bold;
+    text-align: center;
+}
+
+.whose .txt p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #807C77;
+    text-align: center;
+}
+
+.whose .helping .first{
+    margin-right: 80px;
+}
+
+.whose .helping .first p{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cities{
+    background-image: url(../img/cities.png);
+    height: 420px;
+}
+
+.cities .container{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cities h1{
+    color: #000;
+    font-size: 48px;
+    font-style: bold;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+
+.cit {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 140px;
+    height: 45px;
+    font-size: 15px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .div{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .city{
+    margin-bottom: 15px;
+  }
+
+  .nko{
+    margin-left: 60px;
+  }
+
+  .nko .container{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+  .nko h1{
+    color: #000;
+    font-size: 48px;
+    font-style: bold;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.blocks{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.block1{
+    width: 330px;
+    height: 230px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-right: 50px;
+}
+
+.block1 h4{
+    margin-bottom: 10px;
+}
+
+.block1 p{
+    margin-bottom: 30px;
+}
+
+.block1 .logo{
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+
+
+.otzyv .container{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.otzyv h1{
+    color: #000;
+    font-size: 48px;
+    font-style: bold;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.otzyv .linee{
+    width: 570px;
+}
+
+.otzyv .lineee{
+    margin-top: 100px;
+}
+
+
+.fromwho{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fromwho img{
+    margin-right: 25px;
+}
+
+.fromwho .txt h4{
+    margin-top: 10px;
+    font-style: bold;
+    font-size: 16px;
+    text-align: left;
+}
+.fromwho .txt p{
+    font-size: 14px;
+    margin-top: 3px;
+    color: #666666;
+}
+
+
+footer{
+    margin-top: 60px;
+}
+
+footer p{
+    font-size: 16px;
+    margin-right: 35px;
+}

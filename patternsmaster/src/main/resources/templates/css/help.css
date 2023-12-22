@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Montserrat Alternates', sans-serif;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    height: auto;
+    background-color: #FFF8ED;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (max-width: 1024px) {
+    body {
+    width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+    width: 100%;
+    }
+} 
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+}
+
+menu{
+    width: 100%;
+    background-color: white;
+    height: 98px;
+    font-weight: 500;
+}
+
+nav ul{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding-left: 100px;
+}
+
+menu nav ul li a{
+    margin-top: 25px;
+    margin-right: 42px;
+    color: black;
+    font-size: 20px;
+    display: block;
+}
+
+menu nav ul li a:hover{
+    color: #ED7C48;
+    border-bottom: 2px solid #ED7C48;
+}
+
+nav .logo{
+    padding-top: 18px;
+    height: 60px;
+    width: 167px;
+}
+
+nav .logo:hover{
+    transform: scale(1.1);
+}
+
+menu nav .buttons{
+    margin-top: 28px;
+}
+
+
+menu nav .buttons a{
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #F2A17A;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+menu nav .buttons .voiti{
+    padding-top: 10px;
+    color: #F2A17A;
+    background-color: transparent;
+    font-weight: 200;
+    width: 120px;
+    margin-left: 40px;
+    height: 45px;
+}
+
+menu nav .buttons .help{
+    padding-top: 10px;
+    background-color: #F2A17A;
+    color: #fff;
+    margin-left: 20px;
+    width: 120px;
+    height: 45px;
+}
+
+
+  footer{
+    margin-top: 100px;
+}
+
+footer p{
+    font-size: 16px;
+    margin-right: 35px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.main img{
+    width: 550px;
+    height: 680px;
+    margin-top: 30px;
+}
+
+.main h1{
+    font-size: 48px;
+}
+
+.main p{
+    font-size: 20px;
+    color: #000;
+    margin-top: 30px;
+}
+
+
+
+.cash{
+    display: flex;
+    margin-left: -780px;
+  }
+
+  .cash p{
+    color: #000;
+  }
+
+  .main a{
+    background-color: #F2A17A;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 48px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: -840px;
+  }
+
+
+  footer{
+    margin-bottom: 50px;
+  }
